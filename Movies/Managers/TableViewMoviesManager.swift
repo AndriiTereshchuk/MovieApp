@@ -24,6 +24,9 @@ class TableViewMoviesManager: NSObject, UITableViewDataSource, UITableViewDelega
         self.category = category
     }
     
+}
+
+extension TableViewMoviesManager {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return films.count
     }
@@ -39,7 +42,7 @@ class TableViewMoviesManager: NSObject, UITableViewDataSource, UITableViewDelega
             return
         }
         isLoading = !isLoading
-        let p = films.count/20 > 0 ? films.count/20 : 1
+        let p = films.count/20 + 1
         FetchMovies.shared.loadMovies(category: category, page: p) { (films, error) in
             if error == nil {
                 self.films =  self.films + films

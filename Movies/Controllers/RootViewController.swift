@@ -88,9 +88,6 @@ class RootViewController: UIViewController {
     
     
     func prepareTabels() -> Void {
-        tableViewPopular.backgroundColor = .red
-        tableViewUpcoming.backgroundColor = .green
-        tableViewTopRated.backgroundColor = .orange
         tableViewPopular.isHidden = false
         tableViewUpcoming.isHidden = true
         tableViewTopRated.isHidden = true

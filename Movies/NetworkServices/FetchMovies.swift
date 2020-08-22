@@ -46,19 +46,11 @@ class FetchMovies {
                         let film = Film(id: id, title: title, overview: overview, poster: poster)
                         films.append(film)
                     }
-                    if category == .topRated {
-
-                        print("\(K.Urls.baseUrl)/\(category)")
-                        print(dataJSON)
-                    }
                     completion(films, nil)
                 } catch {
                     completion([], error)
                 }
             case let .failure(error):
-                if category == .topRated {
-                    print(error)
-                }
                 completion([], error)
             }
            
