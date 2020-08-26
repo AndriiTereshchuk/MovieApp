@@ -19,6 +19,13 @@
 		70F309C024F06D8F00BBCD98 /* FetchMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309BF24F06D8F00BBCD98 /* FetchMovies.swift */; };
 		70F309C324F080E500BBCD98 /* NetworkUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309C224F080E500BBCD98 /* NetworkUtilities.swift */; };
 		70F309C724F08B4B00BBCD98 /* TableViewMoviesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309C624F08B4B00BBCD98 /* TableViewMoviesManager.swift */; };
+		70F309CA24F1311900BBCD98 /* TableViewMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309C824F1311900BBCD98 /* TableViewMovieCell.swift */; };
+		70F309CB24F1311900BBCD98 /* TableViewMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70F309C924F1311900BBCD98 /* TableViewMovieCell.xib */; };
+		70F309CD24F1688900BBCD98 /* RootViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309CC24F1688900BBCD98 /* RootViewControllerExtension.swift */; };
+		70F309CF24F5B19000BBCD98 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309CE24F5B19000BBCD98 /* MovieDetailsViewController.swift */; };
+		70F309D124F5D19500BBCD98 /* FetchMovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309D024F5D19500BBCD98 /* FetchMovieDetails.swift */; };
+		70F309D324F5D20200BBCD98 /* MovieDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309D224F5D20200BBCD98 /* MovieDetails.swift */; };
+		70F309D524F5DB4E00BBCD98 /* MovieDetailsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F309D424F5DB4E00BBCD98 /* MovieDetailsManager.swift */; };
 		876625EB051B8046CE979AF3 /* Pods_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0DB110E77F9E87547D39E6 /* Pods_Movies.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +46,13 @@
 		70F309BF24F06D8F00BBCD98 /* FetchMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovies.swift; sourceTree = "<group>"; };
 		70F309C224F080E500BBCD98 /* NetworkUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtilities.swift; sourceTree = "<group>"; };
 		70F309C624F08B4B00BBCD98 /* TableViewMoviesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMoviesManager.swift; sourceTree = "<group>"; };
+		70F309C824F1311900BBCD98 /* TableViewMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMovieCell.swift; sourceTree = "<group>"; };
+		70F309C924F1311900BBCD98 /* TableViewMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewMovieCell.xib; sourceTree = "<group>"; };
+		70F309CC24F1688900BBCD98 /* RootViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerExtension.swift; sourceTree = "<group>"; };
+		70F309CE24F5B19000BBCD98 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
+		70F309D024F5D19500BBCD98 /* FetchMovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMovieDetails.swift; sourceTree = "<group>"; };
+		70F309D224F5D20200BBCD98 /* MovieDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetails.swift; sourceTree = "<group>"; };
+		70F309D424F5DB4E00BBCD98 /* MovieDetailsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsManager.swift; sourceTree = "<group>"; };
 		CF59BC1F2551B196CBD7AA71 /* Pods-Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movies.release.xcconfig"; path = "Target Support Files/Pods-Movies/Pods-Movies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				70F309B524F0348A00BBCD98 /* RootViewController.swift */,
+				70F309CE24F5B19000BBCD98 /* MovieDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				70F309BD24F06A7D00BBCD98 /* Film.swift */,
+				70F309D224F5D20200BBCD98 /* MovieDetails.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +136,7 @@
 		70F309BA24F069E700BBCD98 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				70F309CC24F1688900BBCD98 /* RootViewControllerExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,6 +146,8 @@
 			children = (
 				70F309A924F02B8900BBCD98 /* LaunchScreen.storyboard */,
 				70F309A424F02B8500BBCD98 /* Main.storyboard */,
+				70F309C924F1311900BBCD98 /* TableViewMovieCell.xib */,
+				70F309C824F1311900BBCD98 /* TableViewMovieCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				70F309BF24F06D8F00BBCD98 /* FetchMovies.swift */,
+				70F309D024F5D19500BBCD98 /* FetchMovieDetails.swift */,
 			);
 			path = NetworkServices;
 			sourceTree = "<group>";
@@ -153,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				70F309C624F08B4B00BBCD98 /* TableViewMoviesManager.swift */,
+				70F309D424F5DB4E00BBCD98 /* MovieDetailsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -227,6 +248,7 @@
 			files = (
 				70F309AB24F02B8900BBCD98 /* LaunchScreen.storyboard in Resources */,
 				70F309A824F02B8900BBCD98 /* Assets.xcassets in Resources */,
+				70F309CB24F1311900BBCD98 /* TableViewMovieCell.xib in Resources */,
 				70F309A624F02B8500BBCD98 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,14 +303,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				70F309B824F0359900BBCD98 /* Constants.swift in Sources */,
+				70F309D324F5D20200BBCD98 /* MovieDetails.swift in Sources */,
 				70F309BE24F06A7D00BBCD98 /* Film.swift in Sources */,
+				70F309D524F5DB4E00BBCD98 /* MovieDetailsManager.swift in Sources */,
 				70F309C024F06D8F00BBCD98 /* FetchMovies.swift in Sources */,
+				70F309CD24F1688900BBCD98 /* RootViewControllerExtension.swift in Sources */,
 				70F309A324F02B8500BBCD98 /* ViewController.swift in Sources */,
 				70F3099F24F02B8500BBCD98 /* AppDelegate.swift in Sources */,
 				70F309B624F0348A00BBCD98 /* RootViewController.swift in Sources */,
+				70F309CA24F1311900BBCD98 /* TableViewMovieCell.swift in Sources */,
+				70F309CF24F5B19000BBCD98 /* MovieDetailsViewController.swift in Sources */,
 				70F309A124F02B8500BBCD98 /* SceneDelegate.swift in Sources */,
 				70F309C724F08B4B00BBCD98 /* TableViewMoviesManager.swift in Sources */,
 				70F309C324F080E500BBCD98 /* NetworkUtilities.swift in Sources */,
+				70F309D124F5D19500BBCD98 /* FetchMovieDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
